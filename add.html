@@ -1,0 +1,26 @@
+<form action="/ins/" method="POST">
+
+    {% csrf_token %}
+
+<p>Name</p>
+<p><input type="text" name="name"/></p>
+
+<p>Email</p>
+<p><input type="text" name="email"/></p>
+
+<p>Gender</p>
+<p><label><input type="radio" name="gender" value="Male">Male</label></p>
+<p><label><input type="radio" name="gender" value="Female">Female</label></p>
+
+<p>
+    <select name="stream">
+        <option value="">-Select-</option>
+        <option value="BBA">BBA</option>
+        <option value="BCA">BCA</option>
+        <option value="BSC">BSC</option>
+    </select>
+</p>
+
+<p><input type="submit" name="save" value="Submit"></p>
+<p><input type="reset" name="reset" value="Reset"></p>
+</form>
